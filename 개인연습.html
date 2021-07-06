@@ -1,0 +1,108 @@
+<!-- [float 대신 flex 사용해보기]
+    <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .div-group {
+            display: flex;
+            flex-direction: row;
+        }
+        .div{
+            border: 1px solid blue ;
+            width: 100px;
+            height: 100px;
+            margin-right: 2px;
+        }
+        .content {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+    </style>            
+</head>
+<body>
+    <div class="div-group">
+    <div class="div1">DIV1</div>
+    <div class="div2">DIV2</div>
+    <div class="div3">DIV3</div>
+    </div>
+    <div class="content">내용</div>
+
+</body>
+</html>
+ -->
+<!-- 
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .div {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .content {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+        }
+        .wrap::after {
+            display: block;
+            content: "";
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="div">DIV1</div>
+    <div class="div">DIV2</div>
+    <div class="div">DIV3</div>
+    </div>
+    <div class="content">내용</div>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <head>
+     <meta charset="UTF-8">
+     <style>
+         .both {
+             float: left;
+         }
+         .both:after {
+            clear: left;
+            content: "";
+         }
+         .left {
+             background-color: red;
+             width: calc(100% - 300px);
+         }
+         .right {
+             background-color: blue;
+             width: 300px;
+         }
+         .div {
+             border: 1px solid orange;
+             float: left;
+             width: calc(100% / 3);
+             height: 200px;
+             box-sizing: border-box;
+         }
+         /* (float_calc.html에서) wrap2에도 float: left를 주는 이유? 
+         보기에 괜찮으면 content나 display block을 안써줘도 되나? */
+     </style>
+ </head>
+ <body>
+     <div class="wrap1">
+     <div class="both left">왼쪽</div>
+     <div class="both right">오른쪽</div>
+    </div>
+     <div class="wrap2">
+     <div class="div">1</div>
+     <div class="div">2</div>
+     <div class="div">3</div>
+    </div>
+ </body>
+ </html>

@@ -165,33 +165,36 @@ font-family - 글꼴
 
     clear
     -공간 속성을 가진 요소에서 적용 가능
-    -left
-    float: left 속성 제거
-    -right
-        float: right 속성 제거
-    -both
-        float: left, float: right 모두 제거
-    가상 클래스 선택자를 많이 이용함. 주로 after
-    content를 써주고 내용을 꼭 써주어야 하기 때문에 "" 따옴표만 적는다.
+    참고: https://includestdio.tistory.com/34
+          https://webclub.tistory.com/606
+          
+        -left
+            float: left 속성 제거
+        -right
+            float: right 속성 제거
+        -both
+            float: left, float: right 모두 제거
+            가상 클래스 선택자를 많이 이용함. 주로 after
+            content를 써주고 내용을 꼭 써주어야 하기 때문에 "" 따옴표만 적는다.
 
 width - 너비
--calc() -> 계산
-width: calc(100% - 200px);
-width: calc(100% / 3);
-연산기호 앞뒤로 반드시 띄어쓰기
+    -calc() -> 계산
+        width: calc(100% - 200px);
+        width: calc(100% / 3);
+        연산기호 앞뒤로 반드시 띄어쓰기
 
 8.그래픽
 background
     -background-color - 배경색
     1)색상명 2)RGB 3)hex 4)RGBA
--background-image 배경이미지
+    -background-image 배경이미지
     background-image:url("이미지경로");
 
--background-repeat
-    -no-repeat 반복없이 1번만 출력
-    -repeat-x 왼쪽에서 오른쪽으로 반복출력
-    -repeat-y 위에서 아래로 반복출력
--background-position
+    -background-repeat
+        -no-repeat 반복없이 1번만 출력
+        -repeat-x 왼쪽에서 오른쪽으로 반복출력
+        -repeat-y 위에서 아래로 반복출력
+    -background-position
         -배경이미지의 위치
         background-position:좌중우(left/right/center) 상중하(top/bottom/center)
             -수치로 입력시
