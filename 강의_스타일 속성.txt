@@ -1,0 +1,205 @@
+속성명 : 속성값;
+
+1. 글꼴 속성
+font-size   -글자의 사이즈
+            고정 사이즈
+            -px(고정 화소 기준 사이즈)
+            -pt(고정 사이즈)
+
+            상대사이즈
+            -em 부모 기준 요소의 사이즈를 기준으로 하는 사이즈
+                부모 13px
+                자식 1em -> 자식 13px
+                     1.2em -> 자식 15.6px
+            -rem 최상의 태그 기준 사이즈
+            html 13px
+            1rem ->13px
+            1.2rem-> 15.6px
+             ex) 최상위픽셀 13
+            인데 rem으로 30px을 만들고 싶을때
+            30/13 =2.307692307692308 //2.31 정도로 대충 맞추면됨
+
+            폰트사이즈 바꾸고 싶을때,
+            상대사이즈를 쓰면 최상위 사이즈만 바꾸면 되니까 편리함.
+            그래서 보통 em보다 rem을 많이 씀.
+color - 글자 색
+        1)색상명 (red, orange...)
+        2)RGB(0~255,0~255,0~255)
+          RGBA(투명도)
+        3)HEX 코드(16진수)
+        rgb 숫자 ->16진수로 변경
+        red
+        rgb(255, 0, 0)
+        hex  ff 00  00
+text-align - 텍스트 정렬
+             left
+             reight
+             center
+             justify 양쪽정렬 (자간맞춤) 맨 끝 오른쪽 들쑥날쑥한거 맞춤
+
+line-height - 행간 (기본값 1.2)
+letter-spacing - 글자 자간 (글자 사이사이)
+word-spacing - 단어별 자간
+
+font-weight - 글자의 두께
+            - 문자 (normal 기본값, bold 두껍게)
+            - 숫자 (100~900) 지원되는 폰트에 따라 다른다
+font-family - 글꼴
+              기본 글꼴, 대체글꼴1, 대체글꼴2;
+              기본글꼴이 없는 경우 차례대로 대체 글꼴이 적용
+              보통 대체 글꼴을 적어둠.
+             "맑은 고딕", "Apple Gothic"; 
+             ->애플 고딕은 맑은고딕이 없을때 쓰이는 대체 폰트
+             시스템 폰트
+             웹폰트(시스템에 없는 폰트)
+             -<link> 스타일 css 추가방식
+             -@import css 추가방식
+
+2.공간
+    display - 공간 속성을 변경
+              block - 공간
+                    - 너비,높이
+                    - 상하좌우 여백(padding, margin)
+
+              inline - 글의 속성
+                     - 너비, 높이 X
+                     - 모든 방향(상하좌우) padding 가능
+                     - 좌우 여백 margin 가능
+              inline-block
+                     - inline과 block을 절충
+                     - 줄개행 X
+                     - 너비 높이O, 모든 방향 margin 가능
+              none - 감춤처리
+              표와 같이 만들어주는 속성 값;
+              table - 테이블 행
+              table-cell - 테이블 열
+
+3.레이아웃
+    box-sizing
+        1)내용 영역 기준
+        content-box(기본값)
+        내용 영역의 사이즈를 유지하면서 확대
+        총 사이즈 = 내용 영역 + 내부여백(padding) + 경계
+
+        2)경계 영역 기준
+        border-box (강사님 선호)
+        경계를 기준으로 사이즈를 정하는 방식
+        경계 + 내부여백(padding)에 따라서 내용 영역의 사이즈가 변경 된다.
+
+4.여백
+1) 내부 여백
+    padding
+        -padding:10px; -> 상,우,하,좌 (모든방향) 10px
+        -padding:10px 20px;
+                -10px 상하
+                -20px 우좌
+        -padding:10px 20px 30px;
+                -10px 상
+                -20px 우좌
+                -30px 하
+        -padding:10px 20px 30px 40px;
+                -10px 상
+                -20px 우
+                -30px 하
+                -40px 좌
+
+        -padding-top      
+        -padding-bottom
+        -padding-left
+        -padding-right
+
+2) 외부 여백
+    margin
+        -적용순서 padding과 동일
+
+5. 경계
+    border - 경계
+        
+        border : 라인굵기(px) 경계선 종류 색상;
+            경계선 종류
+            1) solid : 직선
+            2) dotted : 점선
+            3) dashed : ------
+    border-radius
+        -경계를 둥글게
+        (px, %)
+         ->50% 원
+         
+6.포지션
+    - 배치
+    position
+        -stastic(기본값)
+        
+        상대위치
+        -relative
+            -기준(요소 자신)
+            -자기 자신이 위치한 위치 기준으로 상대적으로 이동(자기 자신이 이동)
+        -absolute
+            -기준 -상대위치로 지정한 부모 또는 조상
+                -부모,조상 중 누구라도 상대위치 속성을 가진다면(relative,absolute,fixed)
+                기준내에서 상대적으로 이동
+                상대속을 가지고 있는 부모가 없다면 전체문서 기준 (html)
+                
+                
+        -fixed
+        -기준 보이는 화면 기준으로 상대적으로 이동
+
+        상대위치는 상대적으로 이동하기 위한 것이므로 하기 추가 속성 존재
+        
+        top 위에서 아래로
+        reight 오른쪽에서 왼쪽으로
+        bottom 아래에서 위로
+        left 왼쪽에서 오른쪽으로
+        z-index 각 요소의 층위
+                숫자가 클수록 앞쪽에 있고
+                숫자가 작아질수록 뒤쪽에 있다
+                예) z-index: 10, z-index:9;
+                 10이 9보다는 앞에 있다
+
+7.배치
+    float
+    left - 왼쪽 -> 오른쪽
+    right - 오른쪽 -> 왼쪽
+     - float 속성이 없더라도 다음 요소에 영향을 미친다
+     -clear 속성을 반드시 적용해야 한다.
+
+    clear
+    -공간 속성을 가진 요소에서 적용 가능
+    -left
+    float: left 속성 제거
+    -right
+        float: right 속성 제거
+    -both
+        float: left, float: right 모두 제거
+    가상 클래스 선택자를 많이 이용함. 주로 after
+    content를 써주고 내용을 꼭 써주어야 하기 때문에 "" 따옴표만 적는다.
+
+width - 너비
+-calc() -> 계산
+width: calc(100% - 200px);
+width: calc(100% / 3);
+연산기호 앞뒤로 반드시 띄어쓰기
+
+8.그래픽
+background
+    -background-color - 배경색
+    1)색상명 2)RGB 3)hex 4)RGBA
+-background-image 배경이미지
+    background-image:url("이미지경로");
+
+-background-repeat
+    -no-repeat 반복없이 1번만 출력
+    -repeat-x 왼쪽에서 오른쪽으로 반복출력
+    -repeat-y 위에서 아래로 반복출력
+-background-position
+        -배경이미지의 위치
+        background-position:좌중우(left/right/center) 상중하(top/bottom/center)
+            -수치로 입력시
+            background-position: 100px 100px;
+                좌에서 우로 100px 이동 / 위에서 아래로 100px 이동
+
+-단축
+    background: 색상 이미지 반복 위치;
+                (색상, 이미지는 둘다 나와도 되고, 둘중 하나만 있어도 된다)
+
+
