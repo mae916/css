@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>transition</title>
+    <style>
+      .div {
+        width:100px;
+        height:100px;
+        background-color:orange;
+        /* transition: all 2s; */
+        /*
+        transition-property: width;
+        transition-property:height;
+        transition-duration: 2s;
+        transition-timing-function:ease-out;
+        transition-delay: 2s;
+         */
+         /* transition: width 2s ease-in-out 0.2s, height 2s ease-in-out 0.2s; */
+         transition: all 2s ease-in-out 0.2s;
+         /* all을 쓰면 width,height를 둘다 써줄 필요 없음 */
+
+      }
+      .div:hover {
+        width:300px;
+        height:300px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+
+    </div>
+  </body>
+</html>

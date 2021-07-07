@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  color: #000000;
+}
+html {
+  font-size: 13px; /* 1rem - 13px */
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 상단 메뉴 */
+nav {
+  border-bottom: 1px solid #212121;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff
+}
+nav ul li {
+  float: left;
+  padding: 10px 20px;
+}
+nav ul:after {  /* 위 nav ul li 태그의 부모에 적용 */
+  clear: left;
+  content: "";
+  display: block;
+}
+nav ul li a {
+  font-size: 1.54rem;  /* 약 20px */
+}
+nav .show_menu {
+  font-size: 2rem;  /* 약 26px */
+  cursor: pointer;
+}
+
+/* 모바일 상단 */
+header {
+  padding-top: 58px;
+}
+
+/* 모바일 사이트 메인 */
+main {
+  min-height: 1000px;
+  background-color: #f8f8f8;
+}
+
+/* 모바일 사이드 메뉴 */
+aside {
+  position: fixed;
+  width: 200px;
+  background-color: #ffffff;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid #212121;
+  left: -200px;  /* width에 200px을 줬기 때문에 왼쪽으로 -200px을 주면 왼쪽으로 들어가서 안보임.  */
+  transition: all 1s;
+}
+
+aside.on {/* 사이드 메뉴 활성화,-200px로 사라진게 나타나게 하기 위해서 0, class="on"이 있으면 사이드메뉴가 보이고 없으면 안보임 */
+  left: 0;
+}
+aside .close_menu {
+  position: absolute;  /* 조상의 상대 위치, 조상이 aside인데 fixed 갖고 있으니 얘만 absolute 써줌 */
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}

@@ -48,7 +48,7 @@ font-family - 글꼴
               기본 글꼴, 대체글꼴1, 대체글꼴2;
               기본글꼴이 없는 경우 차례대로 대체 글꼴이 적용
               보통 대체 글꼴을 적어둠.
-             "맑은 고딕", "Apple Gothic"; 
+             "맑은 고딕", "Apple Gothic";
              ->애플 고딕은 맑은고딕이 없을때 쓰이는 대체 폰트
              시스템 폰트
              웹폰트(시스템에 없는 폰트)
@@ -103,7 +103,7 @@ font-family - 글꼴
                 -30px 하
                 -40px 좌
 
-        -padding-top      
+        -padding-top
         -padding-bottom
         -padding-left
         -padding-right
@@ -114,7 +114,7 @@ font-family - 글꼴
 
 5. 경계
     border - 경계
-        
+
         border : 라인굵기(px) 경계선 종류 색상;
             경계선 종류
             1) solid : 직선
@@ -124,12 +124,12 @@ font-family - 글꼴
         -경계를 둥글게
         (px, %)
          ->50% 원
-         
+
 6.포지션
     - 배치
     position
         -stastic(기본값)
-        
+
         상대위치
         -relative
             -기준(요소 자신)
@@ -139,13 +139,13 @@ font-family - 글꼴
                 -부모,조상 중 누구라도 상대위치 속성을 가진다면(relative,absolute,fixed)
                 기준내에서 상대적으로 이동
                 상대속을 가지고 있는 부모가 없다면 전체문서 기준 (html)
-                
-                
+
+
         -fixed
         -기준 보이는 화면 기준으로 상대적으로 이동
 
         상대위치는 상대적으로 이동하기 위한 것이므로 하기 추가 속성 존재
-        
+
         top 위에서 아래로
         reight 오른쪽에서 왼쪽으로
         bottom 아래에서 위로
@@ -167,7 +167,7 @@ font-family - 글꼴
     -공간 속성을 가진 요소에서 적용 가능
     참고: https://includestdio.tistory.com/34
           https://webclub.tistory.com/606
-          
+
         -left
             float: left 속성 제거
         -right
@@ -204,5 +204,3 @@ background
 -단축
     background: 색상 이미지 반복 위치;
                 (색상, 이미지는 둘다 나와도 되고, 둘중 하나만 있어도 된다)
-
-

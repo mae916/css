@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 13px;
+}
+body {
+  margin:0;
+}
+nav ul li {
+  font-size: 1.5rem;
+  float: left;
+  list-style: none;
+}
+nav ul:after {
+  clear: left;
+  content: "";
+  display: block;
+}
+nav {
+    border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+aside {
+  width: 200px;
+  border-right: 1px solid black;
+  position: fixed;
+  top: 0;
+
+  height: 100%;
+  background-color: white;
+}
+header {
+  height: 60px;
+}
+main {
+  min-width: 1000px;
+}
+aside .close_menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+aside.on {
+  left: 0;
+}
