@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>코지샵 공식 온라인스토어</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </head>
@@ -13,27 +19,27 @@
     <header>
       <div class="site_top">
         <div class="layout_width">
-          <a href="#">JOIN</a> |
-          <a href="#">CART</a> |
-          <a href="#">ORDER</a> |
+          <a href="#" class="first">JOIN</a>
+          <a href="#">CART</a>
+          <a href="#">ORDER</a>
           <a href="#">전자공고</a>
         </div>
       </div>
       <div class="logo_search">
         <div class="inner layout_width">
           <div class="box icon_menu">
-            <a href="#"><img src="img/nshop_live2.png"></a>
-            <a href="#"><img src="img/icon_loc.png"></a>
-            <a href="#"><img src="img/icon_air.png"></a>
+            <a href="#"><img src="img/nshop_live2.png" /></a>
+            <a href="#"><img src="img/icon_loc.png" /></a>
+            <a href="#"><img src="img/icon_air.png" /></a>
           </div>
           <div class="box logo">
-            <a href="#"><img src="img/logo.png"></a>
+            <a href="#"><img src="img/logo.png" /></a>
           </div>
           <div class="box search">
             <div class="form_wrap">
               <form action="#" method="GET">
-                <input type="text" name="keyword">
-                <input type="image" src="img/icon_search.png">
+                <input type="text" name="keyword" />
+                <input type="image" src="img/icon_search.png" />
               </form>
             </div>
           </div>
@@ -43,9 +49,10 @@
 
     <!-- 메인 메뉴 영역S -->
     <nav>
-      <ul class="layout_width">    <!-- nav는 밖을 벗어남, ul은 안에 있음 layout_width넣어줌 -->
+      <ul class="layout_width">
+        <!-- nav는 밖을 벗어남, ul은 안에 있음 layout_width넣어줌 -->
         <li class="more_menu">
-          <i class="xi-bars" ></i>
+          <i class="xi-bars"></i>
         </li>
         <li>
           <a href="https://www.naver.com/">상업공간</a>
@@ -80,29 +87,299 @@
       </ul>
     </nav>
     <!-- 메인 메뉴 영역 E -->
-
-    <!-- 메인 배너 영역 S -->
-    <section class="main_banner">
-      <!-- Swiper -->
-      <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+    <main>
+      <!-- 메인 배너 영역 S -->
+      <section class="main_banner">
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <i class="xi-angle-left navi prev"></i>
+          <i class="xi-angle-right navi next"></i>
+          <div class="swiper-pagination"></div>
+          <!-- 추가 -->
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>  <!-- 추가 -->
-      </div>
-    </section>
-    <!-- 메인 배너 영역 E -->
+      </section>
+      <!-- 메인 배너 영역 E -->
 
-    <footer></footer>
+      <!-- welcome to cozyshop S -->
+      <section class="main_sbanner">
+        <div class="tit">Welcome To <span>Cozyshop</span></div>
+        <ul class="banner_grp layout_width">
+          <li class="banner">
+            <a href="">
+              <img src="img/sbanner1.jpg" />
+              <div class="text1">Photo Review</div>
+              <div class="text2">
+                사진으로 전하는 고객님들의 생생한 구매 후기
+              </div>
+            </a>
+          </li>
+          <li class="banner">
+            <a href="">
+              <img src="img/sbanner2.jpg" />
+              <div class="text1">Shop Location</div>
+              <div class="text2">
+                매장에 오셔서 다양한 상품들을 직접 만나보세요
+              </div>
+            </a>
+          </li>
+          <li class="banner">
+            <a href="">
+              <img src="img/sbanner3.jpg" />
+              <div class="text1">Consulting Service</div>
+              <div class="text2">1:1 무료 방문 컨설팅 서비스</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- welcome to cozyshop E -->
+
+      <!-- 상품 진열 영역 S -->
+      <section class="goods_display">
+        <article class="goods_list">
+          <div class="layout_width inner">
+            <div class="mtit">NEW <span>ITEMS</span></div>
+            <div class="stit">코지샵의 새로운 상품들을 만나보세요.</div>
+            <div class="spread_bar"></div>
+            <ul>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods">
+                <a href="">
+                  <img src="img/goods.jpg" class="image" />
+                  <div class="goods_nm">멜로우 린넨 주방 바란스 커튼</div>
+
+                  <div class="short_desc">
+                    안락한 분위기로 편안한 휴식을 - 러너로도 활용가능!!
+                  </div>
+
+                  <div class="price_info">
+                    <del class="consumer">42000원</del>
+                    <span class="price">29,900원</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- inner -->
+        </article>
+      </section>
+      <!-- 상품 진열 영역 E -->
+
+      <!-- 상품 소개 배너 S -->
+      <section class="main_intro_banner">
+        <div class="layout_width inner">
+          <div class="box goods_desc">
+            <div class="text1">
+              오직, 코지샵에서만 <br />
+              특가 세일 이벤트
+            </div>
+            <div class="text2">
+              코지샵 자사몰에서만 진행하는 세일이며 <br />
+              최대 60%까지 세일합니다. <br />
+              본 이벤트는 한정수량 소진시 종료됩니다.
+            </div>
+            <a href="" class="view_more"> view more </a>
+          </div>
+          <div class="box banner"></div>
+        </div>
+        <!-- inner -->
+      </section>
+      <!-- 상품 소개 배너 E -->
+
+      <!-- TV &Movie S -->
+      <section class="tv_movie">
+        <article>
+          <div class="mtit"><span>TV &amp; movie</span></div>
+          <div class="stit">영화 및 드라마 협찬 러브콜 1순위 코지샵</div>
+          <div class="spread_bar"></div>
+          <!-- Swiper -->
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/movie1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/movie3.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <i class="xi-angle-left navi prev"></i>
+            <i class="xi-angle-right navi next"></i>
+          </div>
+        </article>
+      </section>
+      <!-- TV & MOVIE E -->
+    </main>
+
+    <footer>
+      <div class="customer_service_info">
+        <div class="info layout_width">
+          <div class="box box1">
+            <div class="text1">CUSTOMER SERVICE</div>
+            <div class="text2">1688 - 4564</div>
+          </div>
+          <div class="box box2">
+            <div class="text3">
+              월요일 - 토요일 09:00 - 18:00 (점심시간 11:50 - 13:00) <br />
+              일요일 및 공휴일은 1:1게시판을 이용해 주세요.
+            </div>
+          </div>
+          <div class="box box3">
+            <a href="" class="btn">1:1문의하기</a>
+            <a href="" class="btn">공사 및 도매문의</a>
+          </div>
+          <div class="box box4">
+            <div class="text1">BANK INFO</div>
+            <div class="text2">062-126853-04012</div>
+          </div>
+          <div class="box box5">
+            <div class="text4">
+              기업은행 &nbsp;&nbsp; 예금주 | 주식회사 코지샵
+            </div>
+            <div class="text5">
+              본사는 위 계좌이외에 타 계좌번호를 사용하지 않습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- customer service info -->
+      <div class="site_guide"></div>
+      <div class="company_info"></div>
+    </footer>
   </body>
 </html>

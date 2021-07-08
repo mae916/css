@@ -70,3 +70,54 @@ text transform
 
 수직으로 가운데 정렬 하는법 中 1
 (전체 높이-컨텐츠크기)/2=?  -> 패딩을 준다.
+
+opacity
+  -투명도 (0~1)
+   0에 가까울수록 투명
+   1에 가까울수록 불투명
+
+box-shadow
+  -요소에 그림자 효과
+  좌측에서 우측  위에서 아래  번짐정도  색상
+  ex) box-shadow:0px 2px 4px #000000;
+
+  -first-child
+  -last-child
+
+<del></del>
+=
+<strike></strike>
+  -취소선
+
+  word-break:
+    -break-all
+      텍스트 자동 줄 개행
+
+      padding : 상단 좌우 하단
+        padding: 5px 0 10px;
+
+        nth-child(4n+1)
+
+        4n+1
+          1,5,9....
+
+background-size 
+  cover 배경이미지 영역 자동맞춤
+
+*******************
+calc   고정사이즈를 주면 나중에 뭔가 변경될때 틀어짐 이렇게 쓰는게 좋음.
+전체스크린 100%
+의 반은
+50%  /  50%
+
+사용영역 .layout_width는 1200px
+의 반은 600px
+
+50%-600px
+=양쪽 여백부분 ->거기에 swiper-pagination prev, next 가 각각 배치됨. 
+********************
+
+위아래 경계가 있는 컨텐츠 경우
+ㄸㅌ)
+  border: 1px solid #58595b;
+라인하이트 -2
