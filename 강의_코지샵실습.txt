@@ -117,7 +117,13 @@ calc   고정사이즈를 주면 나중에 뭔가 변경될때 틀어짐 이렇�
 =양쪽 여백부분 ->거기에 swiper-pagination prev, next 가 각각 배치됨. 
 ********************
 
-위아래 경계가 있는 컨텐츠 경우
-ㄸㅌ)
+
+수직으로 중앙정렬을 해줄때
+height랑 line-height를 같게 해주는게 맞는데,
+위아래 경계가 있는 컨텐츠 경우,
+EX)
   border: 1px solid #58595b;
-라인하이트 -2
+  height: 19px;
+
+  1px+1px=2px를 제외한 17px이 실제 컨텐츠 영역이기 때문에
+  line-height를 17px을 줘야함.
