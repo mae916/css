@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 /* 공통 */
 * {
   box-sizing: border-box;
   color: #000000;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 html {
-  font-size: 13px;  /* 1rem - 13px */
+  font-size: 13px; /* 1rem - 13px */
 }
 body {
   margin: 0;
@@ -21,7 +21,7 @@ ul {
 }
 .layout_width {
   width: 1200px;
-  margin: 0 auto;   /* 좌우에 auto를 주면 좌우 균등하게 옴 */
+  margin: 0 auto; /* 좌우에 auto를 주면 좌우 균등하게 옴 */
 }
 
 /* 사이트 상단 메뉴 */
@@ -29,14 +29,13 @@ ul {
   height: 30px;
   background-color: #f9f9f9;
   text-align: right;
-
 }
 .site_top a {
   font-size: 12px;
   letter-spacing: -0.24;
   color: #333333;
   padding: 0 10px;
-  line-height: 30px;  /* height와 line-height를 동일하게 맞추면 컨텐츠가 가운데로 온다.*/
+  line-height: 30px; /* height와 line-height를 동일하게 맞추면 컨텐츠가 가운데로 온다.*/
 }
 
 /* 사이트 로고, 검색, 아이콘 메뉴 */
@@ -52,13 +51,13 @@ ul {
 }
 .logo_search .logo {
   text-align: center;
-  padding: 46px 0;
+  padding: 46px 0; /* (120-28(로고사이즈))/2=46 */
 }
 .logo_search .logo img {
   height: 28px;
 }
 
-.logo_search .search input[type='image'] {
+.logo_search .search input[type="image"] {
   height: 37px;
   /* 원래 23.99x37인데 높이만 설정해주면 너비는 자연스럽게 23.99로 설정됨(높이가 중요) */
   vertical-align: top;
@@ -92,20 +91,20 @@ ul {
 .logo_search .icon_menu a:nth-child(2) img,
 .logo_search .icon_menu a:nth-child(3) img {
   height: 68px;
-
 }
 .logo_search .icon_menu {
-  padding: 26px 0;    /* 120(로고+padding높이)-68/2 */
+  padding: 26px 0; /* 120(로고+padding높이)-68/2 */
 }
 
 /* 메인 메뉴 영역 */
 nav {
   border-bottom: 1px solid #000000;
-
 }
 nav ul li {
   float: left;
-  width: calc((100% - 50px) / 10);  /* nav li.more_menu의 width를 뺀 나머지에서 / 10 */
+  width: calc(
+    (100% - 50px) / 10
+  ); /* nav li.more_menu의 width를 뺀 나머지에서 / 10 */
   text-align: center;
 }
 nav ul:after {
@@ -126,22 +125,22 @@ nav li i {
   vertical-align: middle;
   position: relative;
   top: 12px;
-  cursor:pointer;
+  cursor: pointer;
 }
-nav li.more_menu {  /* li태그중 클래스가 more_menu인 태그(띄어쓰기X) */
+nav li.more_menu {
+  /* li태그중 클래스가 more_menu인 태그(띄어쓰기X) */
   width: 50px;
   text-align: center;
-
 }
 
 /* 메인배너 영역 부분 */
 .main_banner .swiper-slide {
   height: 600px;
 }
-.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
-  background: url("../img/banner1.jpg") no-repeat center center;  /* ../현재 폴더에서 나가는것(상위 폴더로) */
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n + 1) {
+  background: url("../img/banner1.jpg") no-repeat center center; /* ../현재 폴더에서 나가는것(상위 폴더로) */
 }
-.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+2) {
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n + 2) {
   background: url("../img/banner2.jpg") no-repeat center center;
 }
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {

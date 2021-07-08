@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 13px;
+}
+body {
+  margin: 0;
+}
+.layout_width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 사이트 상단 메뉴 */
+.header-login {
+  background-color: #f9f9f9;
+  text-align: right;
+  height: 30px;
+}
+.header-login a {
+  line-height: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 사이트 로고, 검색, 아이콘 메뉴 */
+.header-top .box {
+  float: left;
+  width: calc(100% / 3);
+}
+.header-top .inner:after {
+  clear: left;
+  display: block;
+  content: "";
+}
+.header-top .header-logo {
+  text-align: center;
+  padding: 46px 0;
+}
+.header-logo img {
+  height: 28px;
+}
+.header-top .header-icon img {
+  vertical-align: middle;
+}
+.header-top .header-icon a:nth-child(1) img {
+  height: 62px;
+}
+.header-top .header-icon a:nth-child(2) img,
+.header-top .header-icon a:nth-child(3) img {
+  height: 68px;
+}
+.header-top .header-icon {
+  padding: 27px 0;
+}
+
+.header-top .form_wrap .header-search {
+  float: right;
+  border-bottom: 1px solid black;
+  margin: 40px;
+}
+
+.header-top .form_wrap {
+  clear: right;
+  content: "";
+  display: block;
+}
+.form_wrap .header-search input[type="text"] {
+  border: 0;
+  height: 37px;
+}
+.form_wrap .header-search input[type="image"] {
+  height: 37px;
+  vertical-align: middle;
+}
