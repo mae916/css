@@ -8,6 +8,7 @@ window.onload = function() {
           el: ".main_banner .swiper-pagination",
           clickable:true,
       },
+      loop:true,
     });
 
     var swiper2 = new Swiper(".tv_movie .mySwiper", {

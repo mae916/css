@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+  color: #000000;
+}
+html {
+  font-size: 13px;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.layout_width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 사이트 상단 메뉴 */
+header .site_top {
+  background-color: #f9f9f9;
+  height: 30px;
+  text-align: right;
+}
+header .site_top a {
+  padding: 0 10px 0 10px;
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+}
+
+header .site_top a:before {
+  width: 1px;
+  height: 9px;
+  display: block;
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  right: 0px;
+  top: 10.5px;
+}
+header .site_top .last:before {
+  display: none;
+}
+
+/* 검색 로고 메뉴 */
+header .logo_search:after {
+  clear: left;
+  content: "";
+  display: block;
+}
+header .logo_search .box  {
+  float: left;
+  width: calc(100% / 3)
+}
+
+.logo_search .icons a:nth-child(1) img{
+  height: 62px;
+}
+.logo_search .icons a:nth-child(2) img,
+.logo_search .icons a:nth-child(3) img{
+  height: 68px;
+}
+.logo_search .icons img {
+  vertical-align: middle;
+}
+.logo_search .icons {
+  padding: 26px 0;
+}
+.logo_search .logo {
+  padding: 46px 0;
+  text-align: center;
+}
+.logo_search .logo img {
+  height: 28px;
+}
+.logo_search .search .form_input {
+  width: 200px;
+  height: 38px;
+  float: right;
+  border-bottom: 1px solid #000000;
+}
+.logo_search .search:after {
+  clear: right;
+  content: "";
+  display: block;
+}
+.logo_search .search {
+  padding-top: 40px;
+  position: relative;
+}
+.logo_search .search input[type="image"] {
+  height: 37px;
+  position: absolute;
+  right: 0;
+}
+.logo_search .search input[type="text"] {
+  border: 0;
+  height: 37px;
+  width: calc(100% - 27px);
+}
+nav ul li {
+  float: left;
+
+}
+nav ul:after {
+  display: block;
+  content: "";
+  clear: left;
+}
+nav {
+  border-bottom: 1px solid #000000;
+}

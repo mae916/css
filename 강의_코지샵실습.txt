@@ -101,7 +101,7 @@ box-shadow
         4n+1
           1,5,9....
 
-background-size 
+background-size
   cover 배경이미지 영역 자동맞춤
 
 *******************
@@ -114,7 +114,7 @@ calc   고정사이즈를 주면 나중에 뭔가 변경될때 틀어짐 이렇�
 의 반은 600px
 
 50%-600px
-=양쪽 여백부분 ->거기에 swiper-pagination prev, next 가 각각 배치됨. 
+=양쪽 여백부분 ->거기에 swiper-pagination prev, next 가 각각 배치됨.
 ********************
 
 
@@ -127,3 +127,47 @@ EX)
 
   1px+1px=2px를 제외한 17px이 실제 컨텐츠 영역이기 때문에
   line-height를 17px을 줘야함.
+
+<section>
+  <article>
+
+  </article>
+</section>
+
+  /* normal은 400, bold는 보통 700정도
+
+text-indent
+  들여쓰기
+  EX)text-indent:10px;
+    좌에서 우로 들여쓰기
+
+line-height
+  기본값 1.2
+
+text-overflow:
+  -ellipsis (생략표시 ...을 추가)
+적용 조건)
+  -생략되는 글 요소가 너비를 가져야 하고
+  -글 개행 속성이 없어야 한다.(white-space: nowrap;)
+
+white-space
+  -nowrap 줄개행X
+  -wrap 줄개행O
++ overflow: hidden; ->넘치는 부분 가리기
+
+&copy; 카피라이터 앞에 써줌 카피아이콘
+
+가상 클래스 선택자
+1.상태
+input[type="checked"]:checked - 체크가 되어 있는 상태를 선택
+select option:selected - 선택이 되어 있는 상태를 선택
+input[type="text"]:read-only - 읽기 전용 상태를 선택
+
+div:hover - 마우스를 올린상태
+
+div:not("선택자") - div 중에서 선택자가 없는 요소를 선택
+div:not(".first") - div 중에서 first 클래스가 없는 요소를 선택
+
+2.가상의 요소를 선택
+
+image도 inline이기 때문에 text-align이 적용 된다.

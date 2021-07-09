@@ -1,0 +1,23 @@
+git credential-manager uninstall
+
+git config user.name "github에 가입한 이름"
+git config user.email "github 가입시에 등록한 이메일"
+
+git add .
+git commit -m "확정 메세지"
+git push
+
+git config credential.helper store
+
+위방법이 통하지 않을때,
+
+1.인터넷 익스플로러 엣지에서
+github.com ->로그아웃
+
+2.계정 초기화
+git remote set-url origin https://사용자명(username)@gitbub.com/사용자명(username)/repository명.git
+예)git remote set-url origin https://github.com/mae916/css.git
+
+git pull 안될때
+
+git clone
