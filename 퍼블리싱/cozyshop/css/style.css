@@ -216,7 +216,7 @@ main article:hover .spread_bar {
   border-radius: 6px;
 }
 /*html에 이 클래스 명이 없는데 어떻게 적용 될수 있는건지 궁금
-<div class="swiper-pagination"></div>
+;<div class="swiper-pagination"></div>
 이안에 동적으로 여러 클래스가 추가됨. 자바스크립트
 실제 작성한 html에서는 안보임.
 */
@@ -490,7 +490,6 @@ footer .customer_service_info .text4 {
 }
 footer .customer_service_info .text5 {
   letter-spacing: -1px;
-
 }
 footer .customer_service_info .box4 {
   padding: 0 10px 0 25px;
@@ -514,9 +513,9 @@ footer .site_guide .notice_box {
   padding: 15px;
 }
 footer .site_guide:after {
- clear: both;
- content: "";
- display: block;
+  clear: both;
+  content: "";
+  display: block;
 }
 footer .notice_box .post_tit {
   text-align: right;
@@ -570,7 +569,7 @@ footer .notice_box ul a:hover {
   float: left;
   width: calc((100% - 380px) / 3);
 }
-  /* 사이트맵 콘텐츠 영역 100% 중 딜리버리영역 330을 빼지만
+/* 사이트맵 콘텐츠 영역 100% 중 딜리버리영역 330을 빼지만
   여러 태그때문에 여백이 부족해서 380빼고 나머지 3개영역을 나눔*/
 .site_guide .site_map .box4 {
   width: 330px;

@@ -1,0 +1,295 @@
+/* 공통 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.width_layout {
+  width: 1050px;
+  margin: 0 auto;
+}
+/* 사이트 최상단 */
+header .site_top {
+  background: #5f0080;
+  color: #ffffff;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.site_top_text {
+  position: relative;
+}
+
+header .site_top .xi-close {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+
+/* 사이트 상단 샛별배송 버튼, login 메뉴, 로고*/
+header .login_menu {
+  font-size: 0.85rem;
+}
+header .login_menu .box {
+  width: calc(100% / 2);
+  float: left;
+}
+
+header .login_menu:after {
+  clear: left;
+  display: block;
+  content: "";
+}
+
+header .login_menu .left_btn span:first-child {
+  color: #979797;
+}
+header .login_menu .left_btn span:nth-child(2),
+header .login_menu .left_btn i {
+  color: #5f0080;
+}
+
+header .login_menu .left_btn {
+  border-radius: 30px;
+  border: 1px solid #979797;
+  display: inline-block;
+  margin-top: 9px;
+  padding: 0 6px;
+  text-align: center;
+  line-height: 20px;
+}
+
+header .login_menu .login ul li {
+  float: left;
+  padding: 0 11px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+header .login_menu .login ul:after {
+  clear: left;
+  display: block;
+  content: "";
+}
+header .login_menu .login ul {
+  float: right;
+  line-height: 31px;
+}
+header .login_menu .login:after {
+  clear: right;
+  display: block;
+  content: "";
+}
+header .login_menu .login li:first-child a {
+  color: #5f0080;
+}
+header .login_menu .login ul li a:before {
+  width: 1px;
+  background-color: #000000;
+  display: block;
+  height: 14px;
+  position: absolute;
+  top: 8.5px;
+  left: 0px;
+  content: "";
+}
+header .login_menu .login ul li:first-child a:before {
+  display: none;
+}
+
+header .logo img {
+  height: 79px;
+}
+header .logo {
+  text-align: center;
+}
+
+/* 네비게이션 검색, 아이콘 메뉴 */
+nav {
+  padding: 10px 0;
+}
+nav:after {
+  clear: left;
+  content: "";
+  display: block;
+}
+nav .box {
+  float: left;
+}
+nav .main_menu li {
+  float: left;
+}
+nav .main_menu:after {
+  clear: left;
+  content: "";
+  display: block;
+}
+nav .main_menu li:not(.not) {
+  width: calc((100% - 27px) / 5);
+}
+nav .main_menu i {
+  padding-right: 10px;
+}
+nav .main_menu {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 60%;
+  line-height: 37px;
+}
+nav .form_wrap {
+  width: 40%;
+  text-align: right;
+}
+form input[type="text"] {
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 30px;
+  height: 36px;
+  width: 242px;
+  text-align: center;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+.form_wrap form {
+  position: relative;
+}
+.form_wrap form .xi-search {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 137px;
+  top: 8px;
+}
+.form_wrap .xi-maker,
+.form_wrap .xi-cart-o {
+  font-size: 2.5rem;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+.form_wrap form i {
+  cursor: pointer;
+}
+
+/* 배너 스와이퍼 */
+.main_banner .swiper-slide {
+  height: 370px;
+}
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n + 1) {
+  background: url("../img/banner1.jpg") no-repeat center center;
+}
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n + 2) {
+  background: url("../img/banner2.jpg") no-repeat center center;
+}
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {
+  background: url("../img/banner3.jpg") no-repeat center center;
+}
+
+/* 메인 상품 */
+.tit_goods .mtit {
+  text-align: center;
+  padding: 79px 0 35px 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.tit_goods .goods .image {
+  width: 100%;
+  padding-bottom: 10px;
+  display: block;
+}
+.tit_goods .goods {
+  width: calc(100% / 4 - 20px);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
+}
+.tit_goods:after {
+  clear: left;
+  display: block;
+  content: "";
+}
+.tit_goods .goods .price_info {
+  padding-top: 9px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.tit_goods .goods .price_info span:first-child {
+  color: #fa622f;
+  padding-right: 8px;
+  font-weight: 700;
+}
+.tit_goods .goods del {
+  color: #999;
+  padding-top: 5px;
+}
+
+/* 사이드메뉴 */
+main aside .aside {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  top: 35%;
+}
+main .aside .aside_banner img {
+  height: 120px;
+  margin-bottom: 5px;
+}
+main .aside .asisde_menu {
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+}
+main .aside .asisde_menu li:nth-child(2) {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+main .aside .asisde_menu li {
+  padding: 5px 0;
+}
+
+/* 사이트 하단 */
+footer .box {
+  width: calc(100% / 2);
+}
+footer .service_center_info .text1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+footer .service_center .text2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+footer .service_center .tit {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 9px 0;
+  margin-top: 16px;
+}
+.box2 {
+  margin: 6px 16px 0 0;
+  border: 1px solid black;
+  height: 40px;
+  width: 140px;
+}
+dl {
+  float: right;
+}
