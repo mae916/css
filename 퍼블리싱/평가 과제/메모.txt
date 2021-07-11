@@ -1,3 +1,29 @@
 한줄에서 태그가 양쪽 가생이에 붙을때
 하나(a)의 너비를 정해주고 나머지(b) 너비를 calc로 100% 에서 a의 너비를 빼주고
 플로트로 각각 배치 
+
+컨텐츠 크기만큼 너비를 맞추고 싶을때; inline-block을 써주면 좋다.
+
+dl,dt,dd는 처음시작할때
+list-style-type:none;
+margin:0;
+으로 주는게 좋다.
+
+HOVER
+<ul>
+                <li>
+                  <a href="">공지사항</a>
+                </li>
+                <li>
+                  <a href="">자주하는 질문</a>
+                </li>
+                <li>
+                  <a href="">1:1 문의</a>
+                </li>
+                <li>
+                  <a href="">상품 제안</a>
+                </li>
+                <li>
+                  <a href="">에코포장 피드백</a>
+                </li>
+              </ul>
